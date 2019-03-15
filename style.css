@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA !important;
+}
+
+.big-box {
+    margin-top: 0;
+}
+
+.container {
+    margin-top: 10px;
+    width: 350px !important;
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 1px;
+    padding: 10px 30px !important;
+    overflow: hidden;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.ig-title {
+    margin: 10px 0 30px 0;
+}
+
+.ig-title img {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 185px;
+    height: 71px;
+}
+
+.form-login {
+    margin: 20px 10px;
+}
+
+.form-control {
+    margin-top: 7px;
+}
+
+input {
+    background-color: #FAFAFA !important;
+    display: block;
+    border: .5px solid rgb(230, 230, 230) !important;
+    margin-top: 10px !important;
+}
+
+input:focus {
+    /* border: 1px solid black !important; */
+    box-shadow: none;
+    box-shadow: 0 0 0 !important;
+}
+
+input::placeholder {
+    font-size: 12px;
+}
+
+.btn-primary {
+    width: 100%;
+}
+
+button b {
+    font-size: 15px;
+}
+
+.forgot {
+    color: #3897F0;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.case-line .line {
+    margin: 10px 10px;
+    width: 107px;
+    height: 1px;
+    /* background-color: rgb(136, 136, 136); */
+    border-top: 1px solid rgb(240, 240, 240);
+    display: inline-block;
+}
+
+.case-line h5 {
+    display: inline-block;
+    color: rgb(170, 170, 170);
+    font-size: 15px;
+    margin-top: 1px;
+    vertical-align: top;
+    font-weight: bold;
+}
+
+.login-fb img {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+}
+
+.login-fb p {
+    display: inline-block;
+    color: #3897F0;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 6px;
+}
+
+.login-fb {
+    /* width: 100%; */
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.register-col {
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.small-box .container p:first-child {
+    font-size: 15px;
+    color: rgb(170, 170, 170);
+    display: inline-block;
+}
+
+.small-box .container p:last-child {
+    display: inline-block;
+    font-size: 15px;
+    color: #3897F0;
+    font-weight: bold;
+}
